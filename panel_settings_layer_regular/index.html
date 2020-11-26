@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Library Setup - Previews - Ravage</title>
+  <title>Layer Settings - Regular Layer - Ravage</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Library Setup - Previews";
-    var mkdocs_page_input_path = "tool_libraries_setup_previews.md";
+    var mkdocs_page_name = "Layer Settings - Regular Layer";
+    var mkdocs_page_input_path = "panel_settings_layer_regular.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -66,14 +66,16 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Layers</span></p>
-                <ul>
+                <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../panel_settings_layer_operators/">Layer Operators</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../panel_settings_layer_mapping/">Layer Mapping</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../panel_settings_layer/">Layer Settings</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../panel_settings_layer_regular/">Layer Settings - Regular Layer</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Layer Settings - Regular Layer</a>
+    <ul class="current">
+    </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../panel_settings_layer_texture/">Layer Settings - Texture Layer</a>
                     </li>
@@ -120,24 +122,14 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Libraries</span></p>
-                <ul class="current">
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../tool_libraries_material/">Material Libraries</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../tool_libraries_texture/">Texture Libraries</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../tool_libraries_setup/">Library Setup</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Library Setup - Previews</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#library-view">Library View</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#library-setup-example-1">Library Setup Example 1</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#library-setup-example-2">Library Setup Example 2</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#library-setup-example-3">Library Setup Example 3</a>
-    </li>
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../tool_libraries_setup_previews/">Library Setup - Previews</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Other</span></p>
@@ -166,11 +158,11 @@
     
       
         
-          <li>Libraries &raquo;</li>
+          <li>Layers &raquo;</li>
         
       
     
-    <li>Library Setup - Previews</li>
+    <li>Layer Settings - Regular Layer</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -181,34 +173,16 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="setting-up-material-library-previews">Setting Up Material Library Previews</h1>
-<p>Some material libraries may already be compatible with the Ravage system. However, if you library currently does not not work with it, don't worry, it's quite simple to set up.</p>
-<p>For library previews to show up, you will be required to have an image in each material folder the ends with the word "PREVIEW" and the relevant extension.</p>
-<p>Please note that the spelling of the word "PREVIEW" is essential, but the case does not matter. You can write "PreVIEw", "PREVIEW", "preVIEW", "preview", etc. and it will be identified correctly.</p>
-<p>The supported file extensions for library preview are:</p>
+                <h1 id="layer-settings-regular-layer">Layer Settings - Regular Layer</h1>
+<p>Regular layers use unique nodes for each channel. You can have an image texture on the Albedo Channel, while using a value slider to set the bump detail. Important to note however, the main layer mapping will control the mapping properties for all the channel nodes if they also are Image Textures.</p>
+<p>For the channels, you can use an Image Texture node, RGB node and Value node.</p>
 <ul>
-<li>jpg</li>
-<li>jpeg</li>
-<li>png</li>
-<li>tif</li>
-<li>tiff</li>
+<li>RGB nodes will draw a color picker.</li>
+<li>Value nodes will show a slider.</li>
+<li>Texture nodes will show the texture's properties.</li>
 </ul>
-<hr />
-<h2 id="library-view">Library View</h2>
-<p>When set up correctly this is how a material library will be shown.</p>
-<p><img alt="" src="../images/library_preview_setup1.png" /></p>
-<hr />
-<h2 id="library-setup-example-1">Library Setup Example 1</h2>
-<p>In this example, the preview is an image named "PREVIEW" with a .jpg extension. This is allowed and will render properly.</p>
-<p><img alt="" src="../images/library_preview_setup2.png" /></p>
-<hr />
-<h2 id="library-setup-example-2">Library Setup Example 2</h2>
-<p>This example has a preview image in the folder with the name "jaAdfsaLjlasdf.PreVIew" and ends with a .jpg extension. As the spelling of "PREVIEW" is correct and comes before the file extension, the case of the word is ignored when finding the preview and will render correctly.</p>
-<p><img alt="" src="../images/library_preview_setup3.png" /></p>
-<hr />
-<h2 id="library-setup-example-3">Library Setup Example 3</h2>
-<p>When a library material is either empty or has no valid files,you will see a red image with text that reads "INVALID MATERIAL" as is in the example of the library panel.</p>
-<p><img alt="" src="../images/library_preview_setup4.png" /></p>
+<p>In the example below, the Albedo, Roughness and Bump channels are controlled by an Image Texture node, the Metallic channel has a value node turned to 1.00 which will make this layer fully metalic but with break up from the other channels.</p>
+<p><img alt="" src="../images/panel_layer_regular.png" /></p>
               
             </div>
           </div>
@@ -216,10 +190,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../known_issues/" class="btn btn-neutral float-right" title="Known Issues">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../panel_settings_layer_texture/" class="btn btn-neutral float-right" title="Layer Settings - Texture Layer">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../tool_libraries_setup/" class="btn btn-neutral" title="Library Setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../panel_settings_layer/" class="btn btn-neutral" title="Layer Settings"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -245,10 +219,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../tool_libraries_setup/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../panel_settings_layer/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../known_issues/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../panel_settings_layer_texture/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

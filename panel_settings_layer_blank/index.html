@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Layer Settings - Blank Layer - Ravage</title>
+  <title>Layer Settings - Blank/User Layer - Ravage</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Layer Settings - Blank Layer";
+    var mkdocs_page_name = "Layer Settings - Blank/User Layer";
     var mkdocs_page_input_path = "panel_settings_layer_blank.md";
     var mkdocs_page_url = null;
   </script>
@@ -73,7 +73,11 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../panel_settings_layer/">Layer Settings</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Layer Settings - Blank Layer</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../panel_settings_layer_regular/">Layer Settings - Regular Layer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../panel_settings_layer_texture/">Layer Settings - Texture Layer</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Layer Settings - Blank/User Layer</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#node-editor-operator">Node Editor Operator</a>
     </li>
@@ -164,7 +168,7 @@
         
       
     
-    <li>Layer Settings - Blank Layer</li>
+    <li>Layer Settings - Blank/User Layer</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -175,12 +179,14 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="layer-settings-blank-layer">Layer Settings - Blank Layer</h1>
+                <h1 id="layer-settings-blankuser-layer">Layer Settings - Blank/User Layer</h1>
 <p>Blank layers are layers that are controlled by nodes created by the user.</p>
-<p>This allows you to reuse nodes and may be a little bit more efficient, but also more time consuming, this is all based upon your workflow preferences.</p>
+<p>This allows you to reuse nodes and possibly be more efficient, the functionality is added so as not to limit you to use the addon's interface alone but to have control over your layers.</p>
+<p><img alt="" src="../images/gifs/layer_blank.gif" /></p>
+<hr />
 <h2 id="node-editor-operator">Node Editor Operator</h2>
 <p>When you create a blank layer, all the preview layer operators will disappear and you will be left with the "Open Node Editor" operator. This will open a node editor and make the relevant node the active node. All you will have to do is tab into the specified blank node group and set up your layer.</p>
-<p>Note that tampering with the nodes in the main node tree will possibly break the material's functionality with the addon.</p>
+<p>Note that tampering with the nodes in the main node tree will possibly break the material's compatibility with the addon.</p>
 <p><img alt="" src="../images/panel_layer_blank_operators.png" /></p>
 <h2 id="channels">Channels</h2>
 <p>Channels for the blank layers are similar to other layers, however, they cannot be expanded as their properties are controlled in the node editor.</p>
@@ -198,7 +204,7 @@
         <a href="../panel_settings_layer_filter_operators/" class="btn btn-neutral float-right" title="Filter Operators">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../panel_settings_layer/" class="btn btn-neutral" title="Layer Settings"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../panel_settings_layer_texture/" class="btn btn-neutral" title="Layer Settings - Texture Layer"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -224,7 +230,7 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../panel_settings_layer/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../panel_settings_layer_texture/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../panel_settings_layer_filter_operators/" style="color: #fcfcfc">Next &raquo;</a></span>
