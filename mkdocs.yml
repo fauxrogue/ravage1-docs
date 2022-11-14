@@ -1,0 +1,61 @@
+# Project information
+site_name: Ravage | Faux Rogue
+site_url: https://docs.thefauxrogue.com/
+site_author: Faux Rogue
+site_description: ''
+
+# Copyright
+copyright: Copyright &copy; 2020 - 2023, Faux Rogue
+
+# Theme
+theme:
+    name: readthedocs
+    prev_next_buttons_location: none
+    sticky_navigation: false
+
+# Extensions
+markdown_extensions:
+    - toc:
+          permalink: '#'
+
+# Navigation
+nav:
+    - Getting Started:
+          - Introduction: index.md
+    - Control Area:
+          - Material Control: control/material.md
+          - Layer Control: control/layer.md
+          - Preview Master Channels: control/preview.md
+          - Layer Stack: control/layer_stack.md
+          - Tabs: control/tabs.md
+    - Layers:
+          - Layer Operators: layer/operators.md
+          - Layer Mapping: layer/mapping.md
+          - Layer Settings: layer/settings.md
+          - Layer Settings - Regular Layer: layer/regular.md
+          - Layer Settings - Texture Layer: layer/texture.md
+          - Layer Settings - Blank/User Layer: layer/user.md
+    - Filters:
+          - Filter Operators: filter/operators.md
+          - Filter Settings: filter/settings.md
+    - Masks:
+          - Mask Operators: mask/operators.md
+          - Mask Settings: mask/settings.md
+    - Baking:
+          - Bake Operators: bake/operators.md
+          - Bake Preview: bake/preview.md
+    - Settings:
+          - Material Operators: settings/operators.md
+          - Material Settings: settings/material.md
+    - Tools:
+          - Hotkeys: tools/hotkeys.md
+          - Quick Access Panels: tools/quick_access.md
+          - HDRI Rotation: tools/hdri_rotation.md
+          - Location Modal: tools/location_modal.md
+    - Libraries:
+          - Material Libraries: libraries/material.md
+          - Texture Libraries: libraries/texture.md
+          - Library Setup: libraries/setup.md
+          - Library Setup - Previews: libraries/setup_previews.md
+    - Other:
+          - Known Issues: known_issues.md
