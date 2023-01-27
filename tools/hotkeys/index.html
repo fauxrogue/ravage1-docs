@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Faux Rogue" /><link rel="canonical" href="https://docs.thefauxrogue.com/tools/hotkeys/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Hotkeys - Ravage | Faux Rogue</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Hotkeys";
+        var mkdocs_page_input_path = "tools/hotkeys.md";
+        var mkdocs_page_url = "/tools/hotkeys/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Ravage | Faux Rogue
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Control Area</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../control/material/">Material Control</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../control/layer/">Layer Control</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../control/preview/">Preview Master Channels</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../control/layer_stack/">Layer Stack</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../control/tabs/">Tabs</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Layers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../layer/operators/">Layer Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../layer/mapping/">Layer Mapping</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../layer/settings/">Layer Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../layer/regular/">Layer Settings - Regular Layer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../layer/texture/">Layer Settings - Texture Layer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../layer/user/">Layer Settings - Blank/User Layer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Filters</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../filter/operators/">Filter Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../filter/settings/">Filter Settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Masks</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../mask/operators/">Mask Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../mask/settings/">Mask Settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Baking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bake/operators/">Bake Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bake/preview/">Bake Preview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Settings</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../settings/operators/">Material Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../settings/material/">Material Settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Hotkeys</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#override-confirm-dialog">Override Confirm Dialog</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mute-channels">Mute Channels</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ctrl">Ctrl</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#alt">Alt</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#shift">Shift</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#channel-panels">Channel Panels</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ctrl_1">Ctrl</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#alt_1">Alt</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#shift_1">Shift</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#operator-and-panel-hotkeys">Operator and Panel Hotkeys</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lighting-panel-shift-alt-q">Lighting Panel (Shift + Alt + Q)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#texture-panel-shift-alt-w">Texture Panel (Shift + Alt + W)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#brush-panel-shift-alt-e">Brush Panel (Shift + Alt + E)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#brush-panel-alternative-lmb">Brush Panel - Alternative (LMB)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#settings-panel-shift-alt-r">Settings Panel (Shift + Alt + R)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#active-image-panel-alt">Active Image Panel (Alt + `)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#blend-mode-panel-ctrl-alt-mmb">Blend Mode Panel (Ctrl + Alt + MMB)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#toggle-blend-modes-ctrl-alt-lmb">Toggle Blend Modes (Ctrl + Alt + LMB)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#toggle-object-modes-alt-f3">Toggle Object Modes (Alt + F3)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#toggle-select-tool-alt-f2">Toggle Select Tool (Alt + F2)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#toggle-paint-mask-alt-f1">Toggle Paint Mask (Alt + F1)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#toggle-texture-stencil-shift-alt-a">Toggle Texture Stencil (Shift + Alt + A)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#toggle-texture-mask-stencil-shift-alt-s">Toggle Texture Mask Stencil (Shift + Alt + S)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preview-layer-shift-alt-c">Preview Layer (Shift + Alt + C)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preview-mask-shift-alt-d">Preview Mask (Shift + Alt + D)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rotate-environment-alt-q">Rotate Environment (Alt + Q)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mapping-modal-location-alt-e">Mapping Modal - Location (Alt + E)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#replace-material-slot-shift-alt">Replace Material Slot (Shift + Alt + ")</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../quick_access/">Quick Access Panels</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../hdri_rotation/">HDRI Rotation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../location_modal/">Location Modal</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Libraries</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/material/">Material Libraries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/texture/">Texture Libraries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/setup/">Library Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/setup_previews/">Library Setup - Previews</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../known_issues/">Known Issues</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Ravage | Faux Rogue</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Tools &raquo;</li>
+      <li>Hotkeys</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="hotkeys">Hotkeys<a class="headerlink" href="#hotkeys" title="Permanent link">#</a></h1>
+<p>Certain operators will perform batch or alternate operations if certain modifier keys are pressed.</p>
+<h2 id="override-confirm-dialog">Override Confirm Dialog<a class="headerlink" href="#override-confirm-dialog" title="Permanent link">#</a></h2>
+<p>You can override most operators that have a confirm box by pressing down the SHIFT key before clicking on the operator.</p>
+<hr />
+<h2 id="mute-channels">Mute Channels<a class="headerlink" href="#mute-channels" title="Permanent link">#</a></h2>
+<p>Before clicking the mute channel operator, you can use the specified modifier keys below to perform alternate operations.</p>
+<h3 id="ctrl">Ctrl<a class="headerlink" href="#ctrl" title="Permanent link">#</a></h3>
+<p>This will display a popup that allows you to unmute multiple channels.</p>
+<h3 id="alt">Alt<a class="headerlink" href="#alt" title="Permanent link">#</a></h3>
+<p>This will display a popup that allows you to mute multiple channels.</p>
+<h3 id="shift">Shift<a class="headerlink" href="#shift" title="Permanent link">#</a></h3>
+<p>This will allow you to mute all except the selected channel.</p>
+<hr />
+<h2 id="channel-panels">Channel Panels<a class="headerlink" href="#channel-panels" title="Permanent link">#</a></h2>
+<p>Before clicking the channel panel expand operator, you can use the specified modifier keys below to perform alternate operations.</p>
+<h3 id="ctrl_1">Ctrl<a class="headerlink" href="#ctrl_1" title="Permanent link">#</a></h3>
+<p>This will display all the channel panels.</p>
+<h3 id="alt_1">Alt<a class="headerlink" href="#alt_1" title="Permanent link">#</a></h3>
+<p>This will hide all the channel panels.</p>
+<h3 id="shift_1">Shift<a class="headerlink" href="#shift_1" title="Permanent link">#</a></h3>
+<p>This will hide all the channel panels except the selected one.</p>
+<hr />
+<h2 id="operator-and-panel-hotkeys">Operator and Panel Hotkeys<a class="headerlink" href="#operator-and-panel-hotkeys" title="Permanent link">#</a></h2>
+<p>There are some hotkeys set that will easily help access certain operators and panels.</p>
+<h2 id="lighting-panel-shift-alt-q">Lighting Panel (Shift + Alt + Q)<a class="headerlink" href="#lighting-panel-shift-alt-q" title="Permanent link">#</a></h2>
+<p>The lighting panel can be accessed using Shift + Alt + Q.</p>
+<hr />
+<h2 id="texture-panel-shift-alt-w">Texture Panel (Shift + Alt + W)<a class="headerlink" href="#texture-panel-shift-alt-w" title="Permanent link">#</a></h2>
+<p>The texture panel can be accessed while in texture paint mode using Shift + Alt + W.</p>
+<hr />
+<h2 id="brush-panel-shift-alt-e">Brush Panel (Shift + Alt + E)<a class="headerlink" href="#brush-panel-shift-alt-e" title="Permanent link">#</a></h2>
+<p>The brush panel can be accessed while in texture paint mode using Shift + Alt + E.</p>
+<hr />
+<h2 id="brush-panel-alternative-lmb">Brush Panel - Alternative (LMB)<a class="headerlink" href="#brush-panel-alternative-lmb" title="Permanent link">#</a></h2>
+<p>The brush panel can also be accessed using the left mouse button, however the paint context menu hotkey should be disabled in the Blender preferences for this to work.</p>
+<hr />
+<h2 id="settings-panel-shift-alt-r">Settings Panel (Shift + Alt + R)<a class="headerlink" href="#settings-panel-shift-alt-r" title="Permanent link">#</a></h2>
+<p>The settings panel can be accessed using Shift + Alt + R.</p>
+<hr />
+<h2 id="active-image-panel-alt">Active Image Panel (Alt + `)<a class="headerlink" href="#active-image-panel-alt" title="Permanent link">#</a></h2>
+<p>The active image panel can be accessed while in texture paint mode using Alt + `.</p>
+<hr />
+<h2 id="blend-mode-panel-ctrl-alt-mmb">Blend Mode Panel (Ctrl + Alt + MMB)<a class="headerlink" href="#blend-mode-panel-ctrl-alt-mmb" title="Permanent link">#</a></h2>
+<p>The blend mode panel can be accessed while in texture paint mode using Ctrl + Alt + MMB.</p>
+<hr />
+<h2 id="toggle-blend-modes-ctrl-alt-lmb">Toggle Blend Modes (Ctrl + Alt + LMB)<a class="headerlink" href="#toggle-blend-modes-ctrl-alt-lmb" title="Permanent link">#</a></h2>
+<p>The favorite blend modes can be toggled while in texture paint mode using Ctrl + Alt + LMB.</p>
+<hr />
+<h2 id="toggle-object-modes-alt-f3">Toggle Object Modes (Alt + F3)<a class="headerlink" href="#toggle-object-modes-alt-f3" title="Permanent link">#</a></h2>
+<p>The object and texture paint contexts can be toggled using using Alt + F3.</p>
+<hr />
+<h2 id="toggle-select-tool-alt-f2">Toggle Select Tool (Alt + F2)<a class="headerlink" href="#toggle-select-tool-alt-f2" title="Permanent link">#</a></h2>
+<p>The paint and select tools can be accessed with the paint mask tool active while in texture paint mode using Alt + F2.</p>
+<hr />
+<h2 id="toggle-paint-mask-alt-f1">Toggle Paint Mask (Alt + F1)<a class="headerlink" href="#toggle-paint-mask-alt-f1" title="Permanent link">#</a></h2>
+<p>The paint mask tool can be toggled while in texture paint mode using Alt + F1.</p>
+<hr />
+<h2 id="toggle-texture-stencil-shift-alt-a">Toggle Texture Stencil (Shift + Alt + A)<a class="headerlink" href="#toggle-texture-stencil-shift-alt-a" title="Permanent link">#</a></h2>
+<p>The texture stencil can be toggled while in texture paint mode using Shift + Alt + A.</p>
+<hr />
+<h2 id="toggle-texture-mask-stencil-shift-alt-s">Toggle Texture Mask Stencil (Shift + Alt + S)<a class="headerlink" href="#toggle-texture-mask-stencil-shift-alt-s" title="Permanent link">#</a></h2>
+<p>The texture mask stencil can be toggled while in texture paint mode using Shift + Alt + S.</p>
+<hr />
+<h2 id="preview-layer-shift-alt-c">Preview Layer (Shift + Alt + C)<a class="headerlink" href="#preview-layer-shift-alt-c" title="Permanent link">#</a></h2>
+<p>The active layer can be previewed using Shift + Alt + C.</p>
+<hr />
+<h2 id="preview-mask-shift-alt-d">Preview Mask (Shift + Alt + D)<a class="headerlink" href="#preview-mask-shift-alt-d" title="Permanent link">#</a></h2>
+<p>The active layer's mask can be previewed using Shift + Alt + D.</p>
+<hr />
+<h2 id="rotate-environment-alt-q">Rotate Environment (Alt + Q)<a class="headerlink" href="#rotate-environment-alt-q" title="Permanent link">#</a></h2>
+<p>The viewport HDRI can be rotated using Alt + Q.</p>
+<hr />
+<h2 id="mapping-modal-location-alt-e">Mapping Modal - Location (Alt + E)<a class="headerlink" href="#mapping-modal-location-alt-e" title="Permanent link">#</a></h2>
+<p>The location property of the active layer's mapping can be interactively set using Alt + E.</p>
+<hr />
+<h2 id="replace-material-slot-shift-alt">Replace Material Slot (Shift + Alt + ")<a class="headerlink" href="#replace-material-slot-shift-alt" title="Permanent link">#</a></h2>
+<p>The material in the active slot can be replaced using Shift + Alt + ".</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright &copy; 2020 - 2023, Faux Rogue</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../settings/material/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../quick_access/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

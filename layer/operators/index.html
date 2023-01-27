@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Faux Rogue" /><link rel="canonical" href="https://docs.thefauxrogue.com/layer/operators/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Layer Operators - Ravage | Faux Rogue</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Layer Operators";
+        var mkdocs_page_input_path = "layer/operators.md";
+        var mkdocs_page_url = "/layer/operators/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Ravage | Faux Rogue
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Control Area</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../control/material/">Material Control</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../control/layer/">Layer Control</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../control/preview/">Preview Master Channels</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../control/layer_stack/">Layer Stack</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../control/tabs/">Tabs</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Layers</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Layer Operators</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#blank-layer">Blank Layer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#material-library">Material Library</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pbr-setup">PBR Setup</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#texture-import">Texture Import</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#texture-setup">Texture Setup</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#reset">Reset</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mapping/">Layer Mapping</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../settings/">Layer Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../regular/">Layer Settings - Regular Layer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../texture/">Layer Settings - Texture Layer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../user/">Layer Settings - Blank/User Layer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Filters</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../filter/operators/">Filter Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../filter/settings/">Filter Settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Masks</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../mask/operators/">Mask Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../mask/settings/">Mask Settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Baking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bake/operators/">Bake Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bake/preview/">Bake Preview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Settings</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../settings/operators/">Material Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../settings/material/">Material Settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tools/hotkeys/">Hotkeys</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tools/quick_access/">Quick Access Panels</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tools/hdri_rotation/">HDRI Rotation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tools/location_modal/">Location Modal</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Libraries</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/material/">Material Libraries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/texture/">Texture Libraries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/setup/">Library Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/setup_previews/">Library Setup - Previews</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../known_issues/">Known Issues</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Ravage | Faux Rogue</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Layers &raquo;</li>
+      <li>Layer Operators</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="layer-operators">Layer Operators<a class="headerlink" href="#layer-operators" title="Permanent link">#</a></h1>
+<p>The operators on this panel are explained from left to right, top to bottom.</p>
+<p><img alt="" src="../../img/panel_layer_operators.png" /></p>
+<h3 id="blank-layer">Blank Layer<a class="headerlink" href="#blank-layer" title="Permanent link">#</a></h3>
+<p>The blank layer operator will delete all the nodes on the selected layer and allow the user to create their own nodes inside the layer group in the node editor.</p>
+<p>Click <strong><a href="../user/">HERE</a></strong> to learn more about blank layers.</p>
+<h3 id="material-library">Material Library<a class="headerlink" href="#material-library" title="Permanent link">#</a></h3>
+<p>This will allow you to automatically load materials from libraries saved in the addon preferences.</p>
+<p>If you set up previews for these materials you will also be able to view the previews here.</p>
+<h3 id="pbr-setup">PBR Setup<a class="headerlink" href="#pbr-setup" title="Permanent link">#</a></h3>
+<p>This will allow you to navigate to a directory and select the maps that you would like to import for the different channels.</p>
+<h3 id="texture-import">Texture Import<a class="headerlink" href="#texture-import" title="Permanent link">#</a></h3>
+<p>This will allow you to import a texture that will then be used as the main texture in a texture setup layer.</p>
+<h3 id="texture-setup">Texture Setup<a class="headerlink" href="#texture-setup" title="Permanent link">#</a></h3>
+<p>This will setup nodes to use a main texture (image or procedural) to drive the albedo channel and colorramp nodes to create maps for the other channels.</p>
+<h3 id="reset">Reset<a class="headerlink" href="#reset" title="Permanent link">#</a></h3>
+<p>This will delete all the nodes on the active layer and create Value and RGB nodes for the different channels.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright &copy; 2020 - 2023, Faux Rogue</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../control/tabs/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../mapping/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>
