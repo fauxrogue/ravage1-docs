@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Faux Rogue" /><link rel="canonical" href="https://docs.thefauxrogue.com/layer/settings/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Layer Settings - Ravage | Faux Rogue</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Layer Settings";
+        var mkdocs_page_input_path = "layer/settings.md";
+        var mkdocs_page_url = "/layer/settings/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Ravage | Faux Rogue
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Control Area</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../control/material/">Material Control</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../control/layer/">Layer Control</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../control/preview/">Preview Master Channels</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../control/layer_stack/">Layer Stack</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../control/tabs/">Tabs</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Layers</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../operators/">Layer Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mapping/">Layer Mapping</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Layer Settings</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#channel-control-bar">Channel Control Bar</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#mute">Mute</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#expand">Expand</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#blend-mode">Blend Mode</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#use-channel-opacity">Use Channel Opacity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#channel-opacity">Channel Opacity</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../regular/">Layer Settings - Regular Layer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../texture/">Layer Settings - Texture Layer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../user/">Layer Settings - Blank/User Layer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Filters</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../filter/operators/">Filter Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../filter/settings/">Filter Settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Masks</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../mask/operators/">Mask Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../mask/settings/">Mask Settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Baking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bake/operators/">Bake Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bake/preview/">Bake Preview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Settings</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../settings/operators/">Material Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../settings/material/">Material Settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tools/hotkeys/">Hotkeys</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tools/quick_access/">Quick Access Panels</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tools/hdri_rotation/">HDRI Rotation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tools/location_modal/">Location Modal</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Libraries</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/material/">Material Libraries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/texture/">Texture Libraries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/setup/">Library Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/setup_previews/">Library Setup - Previews</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../known_issues/">Known Issues</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Ravage | Faux Rogue</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Layers &raquo;</li>
+      <li>Layer Settings</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="layer-settings">Layer Settings<a class="headerlink" href="#layer-settings" title="Permanent link">#</a></h1>
+<p>The layer tab has panels that allow you to change the channel settings, and utilize filters on the channels.</p>
+<h2 id="channel-control-bar">Channel Control Bar<a class="headerlink" href="#channel-control-bar" title="Permanent link">#</a></h2>
+<p>The properties on this panel are explained from the left to right.</p>
+<p><img alt="" src="../../img/panel_layer_channel_closed.png" /></p>
+<h3 id="mute">Mute<a class="headerlink" href="#mute" title="Permanent link">#</a></h3>
+<p>This will mute the channel and hide all the settings related to it. When a channel is muted, there will be no settings exposed.</p>
+<h3 id="expand">Expand<a class="headerlink" href="#expand" title="Permanent link">#</a></h3>
+<p>The channel name allows you to hide or expand the channels's settings</p>
+<h3 id="blend-mode">Blend Mode<a class="headerlink" href="#blend-mode" title="Permanent link">#</a></h3>
+<p>This will set the blend mode of the channel to the previous layers.</p>
+<p>The bump channel is set to "Add" by default but can be changed at any given time.</p>
+<h3 id="use-channel-opacity">Use Channel Opacity<a class="headerlink" href="#use-channel-opacity" title="Permanent link">#</a></h3>
+<p>The eye icon allows you to create an opacity node for the channel. The channel is set to 100 opacity by default but once this is set can be changed using the value slider.</p>
+<h3 id="channel-opacity">Channel Opacity<a class="headerlink" href="#channel-opacity" title="Permanent link">#</a></h3>
+<p>If there is an opacity node, this value will multiply the channel's value by the layer's main opacity value.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright &copy; 2020 - 2023, Faux Rogue</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../mapping/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../regular/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>
